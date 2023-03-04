@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .butn {
+    margin-left: 25px;
+  }
+  a {
+    color: white;
+  }
+  
+  .navbar-brand {
+    color: white;
+  }
+  
+  .dateshower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to myblog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg " style="background-color: #6b766b;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Blogging Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+          </ul>
+         
+           
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create New Post
+              </button>
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  
+  <!-- Modal -->
+  <div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Enter Your Heading" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Blog Post"></textarea>
+                  </div>
+            </div>
+            <div class="modal-footer">
+            
+              <button type="button" id="saveBlogbut" data-bs-dismiss="modal" class="btn btn-dark">Publish Post</button>
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Button trigger modal -->
+
+  
+  <!-- edit Modal -->
+  <div class="modal fade editmodal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"></label>
+                  <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Enter Your Heading">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"></label>
+                  <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Blog Post"></textarea>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel Post</button>
+            <button type="button" id="saveBlogbut" data-bs-dismiss="modal" class="btn btn-primary">Publish Post</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+
+    <div class="container-fluid " id="postbody">
+       
+           
+    
+           
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
